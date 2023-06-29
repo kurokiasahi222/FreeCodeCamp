@@ -1,0 +1,73 @@
+body {
+    display: flex; 
+    flex-direction: row;
+    margin: 0; 
+    height: 100% 
+}
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar {
+        display: flex;
+        width: 100%;
+        height: 50%; 
+        flex-direction: row;
+    }
+    #main-doc {
+        margin-top: -500px;
+    }
+}
+
+.flex-remaining {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%; 
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: auto; 
+    height: 100vh; 
+    text-align: center; 
+    border-right: solid; 
+}
+
+#navbar ul {
+    width: 100%;
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#navbar li{
+    font-size: 1.2em; 
+    border-top: 1px solid black;
+}
+
+#navbar li a {
+    display: block; 
+    color: black;
+    font-size: 1.2em;
+    /* To do: getrid of the bullets in the list; */
+    list-style: none;
+    text-decoration: none;
+    padding: 1em; 
+}
+
+header {
+    font-size: 1.8em; 
+    color: black;
+    padding-top: 1em; 
+}
+
+.nav-header {
+    padding: 1em; 
+}
+
+#main-doc {
+    padding-left: 38px;
+    height: 100%;
+}

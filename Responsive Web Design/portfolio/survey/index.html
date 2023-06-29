@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+ <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+ <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+ <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+ <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="Container">
+            <header class="main-header">
+                <h1 id="title">Asahi's survey form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <section class="content">
+                <form id="survey-form">
+                    <div class="survey-item">
+                        <label for="name" id="name-label">Name</label>
+                        <input id="name" type="text" placeholder="name" class="form-input" required>
+                    </div>
+                    <div class="survey-item">
+                        <label for="email" id="email-label">Email</label>
+                        <input id="email" type="email" placeholder="asahi@google.com" class="form-input" required>
+                    </div>
+                    <div class="survey-item">
+                        <label for="number" id="number-label">Age</label>
+                        <input id="number" type="number" min="0" max="100" class="form-input" placeholder="20">
+                    </div>
+                    <div class="survey-item">
+                        <p>Which option best describes your current role?</p>
+                        <select id="dropdown">
+                            <option disabled selected value="select-option">Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="full-time-job">Full time job</option>
+                            <option value="full-time-learner">Full time learner</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="survey-item">
+                        <p>What freeCodeCamp programs have you completed</p>
+                        <label>
+                            <input id="checkbox" type="checkbox" value="webdesign">Web Design
+                        </label>
+                        <label>
+                            <input id="checkbox" type="checkbox" value="javascript">JavaScript Algorithms and Data Structures
+                        </label>
+                        <label>
+                            <input id="checkbox" type="checkbox" value="frontend">Front End Libraries
+                    </div>
+                    <div class="survey-item">
+                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <label>
+                            <input type="radio" name="recommend" value="definitely">Definitely
+                        </label>
+                        <label>
+                            <input type="radio" name="recommend" value="maybe">Maybe
+                        </label>
+                        <label>
+                            <input type="radio" name="recommend" value="not-sure">Not sure
+                        </label>
+                    </div>
+                    <div class="survey-item">
+                        <p> Do you have any commments or suggestions? </p>
+                        <textarea name="comments" id="comments" cols="30" rows="10" class="form-input">Enter your commments here</textarea>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <script src="" async defer></script>
+    </body>
+ </html>

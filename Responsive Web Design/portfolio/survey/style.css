@@ -1,0 +1,50 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    color:white; 
+}
+.main-header {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.Container {
+    max-width: 600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+#survey-form {
+    display: block; 
+    background-color:rgba(27, 27, 50, 0.8); 
+    padding: 2rem; 
+}
+
+.form-input {
+    display: block; 
+    width: 100%;
+    border: 1px solid #ced4da
+
+}
+.survey-item {
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+}
